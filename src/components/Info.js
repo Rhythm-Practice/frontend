@@ -1,7 +1,8 @@
 import React from "react";
 import { isMobile } from "mobile-device-detect";
+import { Link } from "react-router-dom";
 
-const OnlyInBrowser = ({ mobile }) => {
+const OnlyInBrowser = () => {
   return (
     <>
       <h2>
@@ -27,9 +28,11 @@ function Info() {
   return (
     <div className="info">
       <div className="back">
-        <img src="/img/back-1.jpg" alt="" />
         <img src="/img/back-2.jpg" alt="" />
+        <img src="/img/back-1.jpg" alt="" />
         <img src="/img/back-3.jpg" alt="" />
+        <img src="/img/back-4.jpg" alt="" />
+        <img src="/img/back-5.jpg" alt="" />
       </div>
       <main className={"info-main" + mobile}>
         <h1>
@@ -38,7 +41,11 @@ function Info() {
           tus habilidades y reforzar tu talento.
         </h1>
         {isMobile ? null : <OnlyInBrowser mobile={mobile} />}
-        <button className="info-button">Prueba esta experiencia ahora!</button>
+        <Link to="/login">
+          <button className="info-button">
+            Prueba esta experiencia ahora!
+          </button>
+        </Link>
       </main>
     </div>
   );

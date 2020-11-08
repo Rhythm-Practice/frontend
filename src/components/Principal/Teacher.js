@@ -38,9 +38,10 @@ function Teacher() {
     setState({ file: e.target.files[0] });
   };
   const fileUpload = (file) => {
-    const url = "http://example.com/file-upload";
+    const url = "http://localhost:3001/file";
     const formData = new FormData();
     formData.append("file", file);
+    console.log("Enviado");
     const config = {
       headers: {
         "content-type": "multipart/form-data",

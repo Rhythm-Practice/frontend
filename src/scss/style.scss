@@ -9,6 +9,7 @@
 
 :root {
   --c1: #3775f0;
+  --c1-modify: #3775f055;
   --c1-transparent: #090c33cc;
   --c1-dark: #2733d9;
   --c1-shadow: #1a3770;
@@ -42,3 +43,4 @@ h6 {
 @import "form";
 @import "tasks";
 @import "info";
+@import "root";
