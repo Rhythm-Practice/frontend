@@ -1,5 +1,8 @@
 header {
-  padding: 2px 5%;
+  padding: 5px 5%;
   background: var(--c1);
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

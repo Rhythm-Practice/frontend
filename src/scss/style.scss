@@ -9,11 +9,25 @@
 
 :root {
   --c1: #3775f0;
+  --c1-transparent: #090c33cc;
   --c1-dark: #2733d9;
   --c1-shadow: #1a3770;
+  --c2: #1d4273;
+  --c3: #59d9d9;
+  --c4: #a63d33;
+  --c5: #d9665b;
 }
 
 $transition: all 500ms ease;
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: $transition;
+  &:hover {
+    color: var(--c1-shadow);
+  }
+}
 
 h1,
 h2,
@@ -26,3 +40,5 @@ h6 {
 
 @import "header";
 @import "form";
+@import "tasks";
+@import "info";

@@ -21,7 +21,7 @@ function Login() {
     };
     // Enviamos la data al servidor
     window.localStorage.setItem("data", JSON.stringify(data));
-    window.location = "/";
+    window.location = "/principal";
   };
 
   return (
